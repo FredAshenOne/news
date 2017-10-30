@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fcfs</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Saira+Extra+Condensed"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script type="text/javascript" src="js/jquery.animateNumber.js"></script>
+  </head>
+  <body>
+    <div class="main-box">
+        <div class="first-wraper">
+
+          <div class="formulario" id="form">
+            <form class="" action="index.html" method="post">
+              <input type="text" name="name" placeholder="Nombre de proceso" value="" required>
+              <input type="number" name="quantum" placeholder="Quantum (seg)" value="" required>
+              <input type="number" name="prioridad" placeholder="Prioridad" value="" required>
+
+              <input type="submit" name="submit" value="Agregar">
+              <input type="button" name="Iniciar" value="Iniciar simulacion">
+              <select class="" name="orden" id="seleccion" placeholder="--Seleccione el tipo de Orden--" required>
+                <option value="fifo">FIFO</option>
+                <option value="lifo">LIFO</option>
+                <option value="sjf">Short Job First</option>
+                <option value="priority">Prioridad</option>
+              </select>
+            </form>
+          </div>
+          <div class="start" id="start">
+            <input type="button" name="go" id="go" value="GO!">
+
+          </div>
+          <div class="hide" id="table">
+            <table class="tablew">
+              <tr row>
+
+              <th>Nombre</th>
+              <th>Duracion</th>
+              <th>Prioridad</th>
+              <th>Estado</th>
+            </tr>
+            </table>
+          </div>
+
+        </div>
+        <div class="second-wraper">
+          <div class="header">
+            <h6 class="main-header">Simulador de Procesos</h6>
+
+          </div>
+          <div id="note" class="note">
+            <h6 class="pro-header">Agregar Proceso</h6>
+          <span class="icon" id="add">
+            <i class="material-icons newp">note_add</i>
+          </span>
+        </div>
+        <div class="table-container">
+
+          <table class="tablep">
+            <tr>
+              <th>Nombre</th>
+              <th>Duracion</th>
+              <th>Estado</th>
+            </tr>
+            <tr>
+              <td id="nombrep">ell</td>
+              <td id="quantump">
+                <span id="counter">0</span>
+
+              </td>
+              <td id="estadop">Procesando</td>
+            </tr>
+          </table>
+        </div>
+
+        </div>
+        <div class="third-wraper">
+
+        </div>
+
+    </div>
+
+  </body>
+</html>
